@@ -1,0 +1,74 @@
+.top-header-bg {
+    background: var(--black-sads);
+
+    .top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 100%;
+
+            img {
+                width: 185px;
+            }
+        }
+
+        .menu {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    a {
+                        padding: 40px 0 40px 40px;
+                        color: var(--white);
+                        font-size: 18px;
+                        font-weight: 500;
+                        transition: 0.9s ease all;
+                    }
+
+                    &:hover a {
+                        
+                            color: var(--green);
+                        
+                    }
+
+                    &:last-child {
+                        .menu-btn {
+                            position: relative;
+                            z-index: 1;
+                            margin-left: 100px;
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                color: var(--white);
+                                width: 100%;
+
+                                &::after {
+                                    background: var(--green);
+                                    content: '';
+                                    height: 40px;
+                                    z-index: -1;
+                                    left: 25px;
+                                    top: 50%;
+                                    transform: translate(0, -50%);
+                                    position: absolute;
+                                    width: 40px;
+                                    border-radius: 30px;
+                                }
+
+                                img {
+                                    width: 15px;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
